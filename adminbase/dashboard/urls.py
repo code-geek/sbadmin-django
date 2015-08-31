@@ -2,7 +2,7 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r'^/$', views.IndexView.as_view(), name="index"),
+    url(r'^$', views.IndexView.as_view(), name="index"),
     url(r'^blank/$', views.BlankView.as_view(), name="blank"),
     url(r'^buttons/$', views.ButtonsView.as_view(), name="buttons"),
     url(r'^flot/$', views.FlotView.as_view(), name="flot"),
