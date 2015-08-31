@@ -40,10 +40,22 @@
 {% endblock extrastyle %}
 
 <body>
-{% block basecontent %}
-{% endblock basecontent %}
+    {% block basecontent %}
+    {% endblock basecontent %}
 
-{% block extrajs %}
-{% endblock extrajs %}
+    <!-- jQuery -->
+    <script src="{% static "bower_components/jquery/dist/jquery.min.js" %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static "bower_components/bootstrap/dist/js/bootstrap.min.js" %}"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="{% static "bower_components/metisMenu/dist/metisMenu.min.js" %}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{% static "dist/js/sb-admin-2.js" %}"></script>
+
+    {% block extrajs %}
+    {% endblock extrajs %}
 </body>
 </html>
