@@ -238,10 +238,11 @@
                             </span>
                         </div>
                         <!-- /input-group -->
-                    </li>
+                    </li>                   
+                        
                     <li>
                         <a href="{% url 'dashboard:index' %}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                    </li>
+                    </li>                    
                     <li>
                         <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
@@ -314,11 +315,11 @@
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a class="active" href="{% url 'dashboard:blank' %}">Blank Page</a>
+                                <a href="{% url 'dashboard:blank' %}">Blank Page</a>
                             </li>
                             <li>
                                 <a href="{% url 'dashboard:login' %}">Login Page</a>
