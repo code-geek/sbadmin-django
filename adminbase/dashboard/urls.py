@@ -14,4 +14,5 @@ urlpatterns = [
     url(r'^notifications/$', views.NotificationsView.as_view(), name="notifications"),
     url(r'^panels/$', views.PanelsView.as_view(), name="panels"),
     url(r'^tables/$', views.TablesView.as_view(), name="tables"),
+    url(r'^typography/$', views.TypographyView.as_view(), name="typography"),
 ]
